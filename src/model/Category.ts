@@ -11,16 +11,6 @@ class Category {
       this.id = uuidV4();
     }
   }
-
-  /* 
-  Alternativa: 
-  constructor({ id, name, description, created_at }: Category) {
-    this.id = id || uuidV4();
-    this.name = name;
-    this.description = description;
-    this.created_at = created_at;
-  }
-  */
 }
 
 export { Category };
