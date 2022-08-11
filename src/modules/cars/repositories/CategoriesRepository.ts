@@ -4,7 +4,7 @@ import {
   ICreateCategoryDTO,
 } from "./ICategoriesRepository";
 
-class CategoriesRepository implements ICategoriesRepository {
+export class CategoriesRepository implements ICategoriesRepository {
   private categories: Category[];
 
   constructor() {
@@ -31,5 +31,3 @@ class CategoriesRepository implements ICategoriesRepository {
     return this.categories.find((category) => category.name === name);
   }
 }
-
-export { CategoriesRepository };

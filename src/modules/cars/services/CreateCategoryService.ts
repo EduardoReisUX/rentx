@@ -5,7 +5,7 @@ interface IRequest {
   description: string;
 }
 
-class CreateCategoryService {
+export class CreateCategoryService {
   constructor(private categoriesRepository: ICategoriesRepository) {}
 
   execute({ name, description }: IRequest): void {
@@ -18,5 +18,3 @@ class CreateCategoryService {
     this.categoriesRepository.create({ name, description });
   }
 }
-
-export { CreateCategoryService };
