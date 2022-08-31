@@ -18,9 +18,6 @@ export async function ensureAuthenticated(
     throw new AppError("Token missing", 401);
   }
 
-  // Bearer 89sd6789s6g78fg8
-  // [0] = Bearer
-  // [1] = 89sd6789s6g78fg8
   const [, token] = authHeader.split(" ");
 
   try {
@@ -35,6 +32,10 @@ export async function ensureAuthenticated(
     if (!user) {
       throw new AppError("User doesn't exsits!", 401);
     }
+
+    request.user = {
+      id: user_id,
+    };
 
     next();
   } catch (AppError) {
