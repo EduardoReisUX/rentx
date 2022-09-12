@@ -39,10 +39,10 @@ export class AuthenticateUserUseCase {
     }
 
     const token = sign(
-      email,
+      { email },
       "94e2c128c93bec67fe599c3c1aafbb0fbec1aab90519c1443fe46345ce156768",
       {
-        subject: user.id, // autor do request -> sempre o id
+        subject: String(user.id), // autor do request -> sempre o id
         expiresIn: "2 days", // 1 dia
       }
     );
