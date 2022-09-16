@@ -16,17 +16,15 @@ Legenda:
 
 - Deve ser possível:
     - Cadastrar um novo carro.
-    - Listar todas as categorias.
 
 ##### RNF
 
 ##### RN
 
 - O carro deve ser cadastrado com disponibilidade.
-- O usuário responsável pelo cadastro deve ser um usuário admin.
+- *O usuário responsável pelo cadastro deve ser um usuário admin.
 - Não deve ser possível:
     - Cadastrar um carro com uma placa já existente.
-    - Alterar a placa de um carro já existente.
 
 <!--  -->
 ### Listagem de Carro
