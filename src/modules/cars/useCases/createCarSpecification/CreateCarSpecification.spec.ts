@@ -23,7 +23,7 @@ describe("Create Car Specification", () => {
       const specifications_id = ["54321"];
 
       await createCarSpecificationUseCase.execute({
-        car_id,
+        car_id: car_id,
         specifications_id,
       });
     }).rejects.toBeInstanceOf(AppError);
@@ -49,7 +49,7 @@ describe("Create Car Specification", () => {
     const specifications_id = [specification.id];
 
     const specificationsCars = await createCarSpecificationUseCase.execute({
-      car_id,
+      car_id: car_id,
       specifications_id,
     });
 
