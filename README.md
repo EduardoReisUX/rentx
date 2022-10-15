@@ -86,10 +86,6 @@ Legenda:
 - Deve ser possível:
     - Cadastrar um aluguel.
 
-##### RNF
-
-- Utilizar o multer para upload dos arquivos
-
 ##### RN
 
 - O aluguel deve ter duração mínima de 24 horas.
@@ -97,4 +93,5 @@ Legenda:
     - Cadastrar um novo aluguel caso já exista um aberto:
         - para o mesmo usuário.
         - para o mesmo carro.
+- O usuário deve estar logado para realizar o aluguel.
 
