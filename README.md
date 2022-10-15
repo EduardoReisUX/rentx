@@ -67,9 +67,7 @@ Legenda:
 
 ##### RF
 
-- Deve ser possível:
-    - Cadastrar a imagem do carro.
-    - Listar todos os carros.
+- Deve ser possível cadastrar a imagem do carro.
 
 ##### RNF
 
